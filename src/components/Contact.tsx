@@ -30,11 +30,11 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 relative scan-line">
+    <section id="contact" className="py-20 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-glow-primary">
-            <span className="text-accent">&gt;</span> Get In <span className="text-secondary">Touch</span> <span className="text-accent">&lt;</span>
+            Get In <span className="text-secondary">Touch</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
         </div>
@@ -46,13 +46,13 @@ export const Contact = () => {
             </p>
 
             <div className="space-y-4">
-              <Card className="border-primary/30 hover:border-primary transition-colors cyber-border hover-glow hover-lift group">
+              <Card className="border-primary/30 hover:border-primary transition-colors">
                 <CardContent className="p-6 flex items-center gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg hover-scale group-hover:bg-primary/20 transition-all">
+                  <div className="p-3 bg-primary/10 rounded-lg">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground"><span className="text-primary">//</span> Email</p>
+                    <p className="text-sm text-muted-foreground">Email</p>
                     <a
                       href={`mailto:${personalInfo.email}`}
                       className="text-lg hover:text-primary transition-colors"
@@ -63,13 +63,13 @@ export const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-primary/30 hover:border-primary transition-colors cyber-border hover-glow hover-lift group">
+              <Card className="border-primary/30 hover:border-primary transition-colors">
                 <CardContent className="p-6 flex items-center gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg hover-scale group-hover:bg-primary/20 transition-all">
+                  <div className="p-3 bg-primary/10 rounded-lg">
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground"><span className="text-primary">//</span> Phone</p>
+                    <p className="text-sm text-muted-foreground">Phone</p>
                     <a
                       href={`tel:${personalInfo.phone}`}
                       className="text-lg hover:text-primary transition-colors"
@@ -80,13 +80,13 @@ export const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-primary/30 hover:border-primary transition-colors cyber-border hover-glow hover-lift group">
+              <Card className="border-primary/30 hover:border-primary transition-colors">
                 <CardContent className="p-6 flex items-center gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg hover-scale group-hover:bg-primary/20 transition-all">
+                  <div className="p-3 bg-primary/10 rounded-lg">
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground"><span className="text-primary">//</span> Location</p>
+                    <p className="text-sm text-muted-foreground">Location</p>
                     <p className="text-lg">{personalInfo.location}</p>
                   </div>
                 </CardContent>
@@ -94,7 +94,7 @@ export const Contact = () => {
             </div>
           </div>
 
-          <Card className="border-primary/30 animate-slide-in-right cyber-border hex-overlay">
+          <Card className="border-primary/30 animate-slide-in-right">
             <CardContent className="p-6">
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
@@ -141,7 +141,7 @@ export const Contact = () => {
                 </div>
                 <Button
                   type="submit"
-                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90 glow-primary hover-scale pulse-glow"
+                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90 glow-primary"
                 >
                   <Send className="mr-2 h-5 w-5" />
                   Send Message

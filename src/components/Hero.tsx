@@ -82,7 +82,7 @@ export const Hero = () => {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Button
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary hover-scale pulse-glow"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary"
               asChild
             >
               <a href="#contact">
@@ -93,22 +93,12 @@ export const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-secondary text-secondary hover:bg-secondary/10 hover-glow cyber-border"
+              className="border-secondary text-secondary hover:bg-secondary/10"
               asChild
             >
               <a href="#projects">
-                View Work
-              </a>
-            </Button>
-            <Button
-              size="lg"
-              variant="secondary"
-              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 glow-secondary hover-scale"
-              asChild
-            >
-              <a href={personalInfo.resumeUrl} download>
                 <Download className="mr-2 h-5 w-5" />
-                Resume
+                View Work
               </a>
             </Button>
           </div>
@@ -122,7 +112,7 @@ export const Hero = () => {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 border border-primary/30 rounded-lg hover:bg-primary/10 hover:border-primary transition-all hover-scale cyber-border hover-glow"
+                  className="p-3 border border-primary/30 rounded-lg hover:bg-primary/10 hover:border-primary transition-all hover:scale-110"
                   aria-label={link.name}
                 >
                   <Icon className="h-5 w-5 text-primary" />

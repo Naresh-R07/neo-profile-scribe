@@ -7,7 +7,6 @@ export const personalInfo = {
   phone: "+1 (555) 123-4567",
   location: "San Francisco, CA",
   profileImage: "/placeholder.svg",
-  resumeUrl: "/resume.pdf",
 };
 
 export const socialLinks = [
